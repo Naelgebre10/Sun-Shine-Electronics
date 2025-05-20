@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Sunshine Electronics</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Sunshine Electronics Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <h3>Web-to-Lead Form</h3>
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+          <input type="hidden" name="oid" value="YOUR_SALESFORCE_OID_HERE" />
+          <label>First Name:<input type="text" name="first_name" required /></label>
+          <label>Last Name:<input type="text" name="last_name" required /></label>
+          <label>Email:<input type="email" name="email" required /></label>
+          <label>Company:<input type="text" name="company" required /></label>
+          <button type="submit">Submit Lead</button>
+        </form>
+
+        <h3>Web-to-Case Form</h3>
+        <form action="https://yourInstance.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+          <input type="hidden" name="orgid" value="YOUR_SALESFORCE_ORGID_HERE" />
+          <label>Name:<input type="text" name="name" required /></label>
+          <label>Email:<input type="email" name="email" required /></label>
+          <label>Subject:<input type="text" name="subject" required /></label>
+          <label>Description:<textarea name="description" required></textarea></label>
+          <button type="submit">Submit Case</button>
+        </form>
+      </section>
+    </main>
+  <footer>
+    <p>&copy; 2025 Sunshine Electronics. All rights reserved.</p>
+  </footer>
+</body>
+</html>
